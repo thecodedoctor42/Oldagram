@@ -44,11 +44,15 @@ function generatePosts() {
                     </div>
                 </div>
                 <img class="post-img" src="${posts[i].post}" alt="${posts[i].name}'s post" ondblclick="likePost(${i})">
-                <img class="btn like-btn" src="${likeBtn}" onclick="likePost(${i})">
-                <img class="btn comment-btn" src="images/comment-btn.png">
-                <img class="btn share-btn" src="images/share-btn.png">
-                <h2 class="bold-text like-counter">${posts[i].likes} likes</h2>
-                <h1 class="img-description"><span class="username">${posts[i].username}</span> <span class="skinny-text">${posts[i].comment}</span></h1>
+                <div class="btn-container">
+                    <img class="btn like-btn" src="${likeBtn}" onclick="likePost(${i})">
+                    <img class="btn comment-btn" src="images/comment-btn.png">
+                    <img class="btn share-btn" src="images/share-btn.png">
+                </div>
+                <div class="post-content">
+                    <h2 class="bold-text like-counter">${posts[i].likes} likes</h2>
+                    <h1 class="img-description"><span class="username">${posts[i].username}</span> <span class="skinny-text">${posts[i].comment}</span></h1>
+                </div>
             </li>
         `
     }

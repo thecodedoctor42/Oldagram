@@ -1,7 +1,7 @@
 /* typography */
 body{
     display: block;
-    width: 375px;
+    width: 395px;
     background: #EDEDED;
     margin: 0 auto;
     font-family: 'Source Sans Pro', sans-serif;
@@ -48,7 +48,8 @@ h2{
 header, 
 section{
     background: #FFFFFF;
-    width: 375px;
+    width: 395px;
+    box-sizing: border-box;
 }
 
 main{
@@ -57,7 +58,6 @@ main{
 
 section{
     padding: 0;
-    width: 375px;
     background-color: #EDEDED;
 }
 
@@ -70,7 +70,6 @@ section{
 
 li{
     width: 100%;
-    padding: 10px;
     background-color: #FFF;
 }
 
@@ -78,8 +77,15 @@ li + li {
   margin-top: 30px;
 }
 
+.user-container,
+.btn-container,
+.post-content{
+    padding: 0 10px;
+}
+
 .user-container{
     display: flex;
+    padding-top: 10px;
 }
 
 .user-info{
@@ -105,4 +111,7 @@ li + li {
 
 .like-counter{
     margin-bottom: 5px;
+}
+.post-content{
+    padding-bottom: 10px;
 }
