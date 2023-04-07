@@ -67,6 +67,6 @@ function likePost(p) {
         likeBtn = "like-btn.png"
         posts[p].likes--
     }
-
+ 
     generatePosts()
 }
